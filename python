@@ -1,0 +1,352 @@
+Python is a  popular programming language.
+It is used for  :
+a) web development.
+b) mathematics.
+c)gaming.
+Why python ?
+python works on different enviroment such as mac, windows,linux,rasberry pi.
+python has simlilar syntax to english.so it is easier to write the program in python.
+#code
+print("Hello, World!")
+Hello, World!
+
+Python indentation 
+Indentation refers to the spaces at the beginning of the code 
+ if (5 >2):
+      print("five is greater than two")
+   
+    Python will give you an error if you skip the indentation:
+
+In Python, a variable is created when you assign a value to it:
+
+x = 5
+y = "Hello, World!"
+
+print(x)
+print(y)
+
+
+Comments
+Python has commenting capability for the purpose of in-code documentation.
+
+Comments start with a #, and Python will render the rest of the line as a comment:
+
+
+
+Semicolons (Optional, Rarely Used)
+Semicolons are optional in Python. You can write multiple statements on one line by separating them with ; but this is rarely used because it makes it hard to read:
+
+print("Hello"); print("How are you?"); print("Bye bye!")
+
+However, if you put two statements on the same line without a separator (newline or ;), Python will give an error:
+print("Python is fun!") print("Really!")
+
+we can use the print() function as many times as we want. Each call prints text on a new line by default:
+print("Hello World!")
+print("I am learning Python.")
+print("It is awesome!")
+
+
+Text in Python must be inside quotes. You can use either " double quotes or ' single quotes:
+It will give error if we forget to put quotes .
+
+By default, the print() function ends with a new line.
+If we want to print multiple words on the same line, we can use the end parameter:
+
+print("Hello World!", end=" ")
+print("I will print on the same line.")
+output
+Hello World! I will print on the same line.
+
+we can also used print function to display number 
+ex : print(88)
+
+we can also do math inside the print() function:
+
+Ex
+print(3 + 3)
+print(2 * 5)
+
+we  can combine text and numbers in one output by separating them with a comma:
+print("I am", 45, "years old.")
+
+I am 45 years old.
+
+
+Variables
+Variables are containers for storing data values.
+
+Creating Variables
+Python has no command for declaring a variable.
+
+A variable is created the moment you first assign a value to it.
+
+x = 5
+y = "John"
+print(x)
+print(y)
+
+output
+ 5
+John
+
+Variables do not need to be declared with any particular type, and can even change type after they have been set.
+
+Example
+x = 4       # x is  type int
+x = "Giri" # x is  type str
+print(x)
+
+Giri 
+
+ Casting
+If you want to specify the data type of a variable, this can be done with casting.
+
+Example
+x = str(3)    # x will be '3'
+y = int(3)    # y will be 3
+z = float(3)  # z will be 3.0
+ 
+print(x)
+print(y)
+print(z)
+
+
+output
+ 3
+3
+3.0
+
+ Get the Type
+You can get the data type of a variable with the type() function.
+
+Example
+x = 5
+y = "John"
+print(type(x))
+print(type(y))
+
+
+ <class 'int'>
+<class 'str'>
+
+
+ Case-Sensitive
+Variable names are case-sensitive.
+
+Example
+This will create two variables:
+
+a = 4
+A = "Sally"
+#A will not overwrite a
+print(a)
+print(A)
+ output
+ 4
+Sally
+
+
+
+Variable Names
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+
+Rules for Python variables:
+
+A variable name must start with a letter or the underscore character
+A variable name cannot start with a number
+A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+Variable names are case-sensitive (age, Age and AGE are three different variables)
+A variable name cannot be any of the Python keywords.
+
+example
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+
+
+print(myvar)
+print(my_var)
+print(_my_var)
+print(myVar)
+print(MYVAR)
+print(myvar2)
+
+
+
+  output
+
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+
+
+print(myvar)
+print(my_var)
+print(_my_var)
+print(myVar)
+print(MYVAR)
+print(myvar2)
+myvar = "John"
+my_var = "John"
+_my_var = "John"
+myVar = "John"
+MYVAR = "John"
+myvar2 = "John"
+​
+​
+print(myvar)
+print(my_var)
+print(_my_var)
+print(myVar)
+print(MYVAR)
+print(myvar2)
+​
+John
+John
+John
+John
+John
+John
+
+
+
+illegal variable names 
+2myvar = "John"
+my-var = "John"
+my var = "John"
+
+Multi Words Variable Names
+Variable names with more than one word can be difficult to read.
+
+There are several techniques you can use to make them more readable:
+
+Camel Case
+Each word, except the first, starts with a capital letter:
+
+myVariableName = "John"
+Pascal Case
+ 
+Each word starts with a capital letter:
+MyVariableName = "John"
+ 
+Snake Case
+Each word is separated by an underscore character:
+my_variable_name = "John"
+
+Global Variables
+Variables that are created outside of a function (as in all of the examples in the previous pages) are known as global variables.
+
+Global variables can be used by everyone, both inside of functions and outside.
+
+ExampleGet your own Python Server
+Create a variable outside of a function, and use it inside the function
+
+
+
+x = "awesome"
+
+def myfunc():
+  print("Python is " + x)
+
+myfunc()
+output 
+
+Python is awesome
+
+Boolean Values
+In programming we often need to know if an expression is True or False.
+
+You can evaluate any expression in Python, and get one of two answers, True or False.
+
+When we compare two values, the expression is evaluated and Python returns the Boolean answer:
+
+
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+
+output
+True
+False
+False
+
+When we run a condition in an if statement, Python returns True or False:
+
+Example
+Print a message based on whether the condition is True or False:
+
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+  output
+  b is not greater than a
+
+python operators
++	Addition	x + y	
+-	Subtraction	x - y	
+*	Multiplication	x * y	
+/	Division	x / y	
+%	Modulus	x % y	
+**	Exponentiation	x ** y	
+//	Floor division	x // y
+
+
+
+some examples are
+x = 5
+y = 2
+
+print(x % y)
+
+output 
+1
+
+
+x = 2
+y = 5
+
+print(x ** y) #same as 2*2*2*2*2
+
+
+x = 15
+y = 2
+
+print(x // y)
+
+#the floor division // rounds the result down to the nearest whole number
+
+output 7
+
+
+  
+
+
+
+
+
+ 
+
+
+ 
+      
+ 
+
+ 
+
+
+
+
+  
+
